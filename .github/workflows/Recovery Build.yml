@@ -10,7 +10,7 @@ on:
       URL:
         description: 'URL'
         required: true
-        default: ''
+        default: 'https://github.com/Adiix64/Junk_1.git'
 
 jobs:
   build:
@@ -28,7 +28,7 @@ jobs:
       run: |
         sudo apt update
         sudo apt -y upgrade
-        sudo apt -y install rust
+        sudo apt -y install rustc
 
     - name: Clone
       run: |
