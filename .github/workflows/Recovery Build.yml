@@ -33,7 +33,7 @@ jobs:
     - name: Clone
       run: |
         git clone ${{ github.event.inputs.URL }} -b ${{ github.event.inputs.BRANCH }} ./build
-        cd build
+        cd $PWD/build 
 
     - name: Building recovery
       run: |
